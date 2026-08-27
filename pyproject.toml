@@ -1,0 +1,24 @@
+[project]
+name = "goof-uv"
+version = "1.0.0"
+description = "uv/Python companion fixture for nodejs-goof, used to test Snyk repo content sync for uv projects"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+    "requests==2.19.1",
+    "flask==0.12.2",
+    "jinja2==2.10",
+    "pyyaml==5.3.1",
+    "urllib3==1.23",
+    "werkzeug==0.15.5",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
